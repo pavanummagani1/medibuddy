@@ -19,7 +19,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-producti
 // Middleware
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173','https://medibuddy-red.vercel.app'],
     credentials: true,
   })
 );
