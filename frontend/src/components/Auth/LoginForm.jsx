@@ -60,7 +60,7 @@ const LoginForm = () => {
                 className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
                   errors.email ? 'border-red-300 bg-red-50' : 'border-gray-300'
                 }`}
-                placeholder="Enter your email"
+                placeholder="use abc@gmail.com"
               />
             </div>
             {errors.email && (
@@ -89,7 +89,7 @@ const LoginForm = () => {
                 className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
                   errors.password ? 'border-red-300 bg-red-50' : 'border-gray-300'
                 }`}
-                placeholder="Enter your password"
+                placeholder="Abc@us$123"
               />
               <button
                 type="button"
