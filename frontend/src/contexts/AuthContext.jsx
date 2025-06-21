@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
       const savedToken = localStorage.getItem('token');
       if (savedToken) {
         try {
-          const res = await fetch('http://localhost:3002/api/auth/profile', {
+          const res = await fetch('https://medibuddy-9kfe.onrender.com/api/auth/profile', {
             headers: {
               Authorization: `Bearer ${savedToken}`
             }
@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
   // Login
   const login = async (email, password) => {
     try {
-      const res = await fetch('http://localhost:3002/api/auth/login', {
+      const res = await fetch('https://medibuddy-9kfe.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -72,7 +72,7 @@ export const AuthProvider = ({ children }) => {
   // Register
   const register = async (email, password, name, role) => {
     try {
-      const res = await fetch('http://localhost:3002/api/auth/register', {
+      const res = await fetch('https://medibuddy-9kfe.onrender.com/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password, name, role }),
